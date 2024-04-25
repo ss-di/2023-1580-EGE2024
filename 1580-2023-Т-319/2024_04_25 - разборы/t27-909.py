@@ -12,8 +12,8 @@ ans = 0
 mn = 10001
 for i in range(n):
     ans += sum(data[i][1:])
-#    if (data[i][2] - data[i][0]) % 5 != 0:
-#        mn = min(mn, data[i][2] - data[i][0])
+    if (data[i][2] - data[i][0]) % 5 != 0:
+        mn = min(mn, data[i][2] - data[i][0])
     if (data[i][1] - data[i][0]) % 5 != 0:
         mn = min(mn, data[i][1] - data[i][0])
    
